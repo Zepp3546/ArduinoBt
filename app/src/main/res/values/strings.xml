@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Brians AC/DC I/O Bt. Diag. Tool</string>
+    <string name="dsw8">DigitalOut-8</string>
+    <string name="dsw9">DigitalOut-9</string>
+    <string name="dsw10">DigitalOut-10</string>
+    <string name="dsw11">DigitalOut-11</string>
+    <string name="textView5">Digital-2=</string>
+    <string name="textView6">Digital-3=</string>
+    <string name="textView7">Digital-4=</string>
+    <string name="textView8">Digital-5=</string>
+    <string name="daBtn">Goto Analog I/O</string>
+    <string name="title_activity_analog_display">AnalogDisplayActivity</string>
+</resources>
