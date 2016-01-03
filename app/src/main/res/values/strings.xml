@@ -10,4 +10,7 @@
     <string name="textView8">Digital-5=</string>
     <string name="daBtn">Goto Analog I/O</string>
     <string name="title_activity_analog_display">AnalogDisplayActivity</string>
+    <string name="tiger">tiger</string>
+    <string name="low">Low</string>
+    <string name="high">High</string>
 </resources>

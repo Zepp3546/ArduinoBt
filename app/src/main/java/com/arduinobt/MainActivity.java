@@ -6,7 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Switch;
+import android.widget.ToggleButton;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void clickAtThing (View view){
+
+
+        Snackbar.make(view, "Clicky!", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show();
+
+    }
+
 
 
 
@@ -46,15 +57,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void clickAtThing (View view){
-
-
-            Snackbar.make(view, "Clicky!", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
-
-    }
-
-
-
-
 }
+
+
+
+
+
+
