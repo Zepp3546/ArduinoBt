@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
 
     tools:context="com.arduinobt.MainActivity"
-    >
+    android:background="#808080">
 
 
     <Switch
@@ -21,8 +21,7 @@
         android:checked="false"
         android:showText="false"
         android:textOn="@string/high"
-        android:textOff="@string/low"
-        android:textColorLink="#67df6f" />
+        android:textOff="@string/low" />
 
     <Switch
     android:layout_width="wrap_content"
@@ -33,6 +32,9 @@
     android:layout_alignParentRight="true"
     android:layout_alignParentEnd="true"
         android:paddingTop="50dp"
+        android:textOn="@string/high"
+        android:textOff="@string/low"
+
         android:onClick="clickAtThing"/>
 
 
@@ -45,6 +47,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:paddingTop="50dp"
+        android:textOn="@string/high"
+        android:textOff="@string/low"
         />
 
 
@@ -56,7 +60,9 @@
         android:layout_below="@+id/switch10"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:paddingTop="50dp"/>
+        android:paddingTop="50dp"
+        android:textOn="@string/high"
+        android:textOff="@string/low" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -66,7 +72,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:paddingTop="60dp"/>
+        android:paddingTop="60dp"
+        android:enabled="true"
+        android:textStyle="bold"
+         />
 
     <TextView
         android:layout_width="wrap_content"
@@ -76,7 +85,8 @@
         android:paddingTop="50dp"
         android:layout_below="@+id/textView5"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -86,7 +96,9 @@
         android:layout_below="@+id/textView6"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:paddingTop="50dp"/>
+        android:paddingTop="50dp"
+        android:elegantTextHeight="false"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -96,18 +108,19 @@
         android:layout_below="@+id/textView7"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:paddingTop="50dp"/>
+        android:paddingTop="50dp"
+        android:textStyle="bold" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/daBtn"
         android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:onClick="goToAnalog"
         android:longClickable="true"
-        />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+         />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -123,42 +136,56 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="@string/low"
         android:id="@+id/textView"
         android:layout_alignTop="@+id/textView5"
         android:layout_toRightOf="@+id/textView5"
         android:layout_toEndOf="@+id/textView5"
         android:paddingTop="60dp"
-         />
+        android:textColor="#ff0000" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Small Text"
+        android:text="@string/low"
         android:id="@+id/textView2"
         android:layout_below="@+id/switch8"
         android:layout_alignTop="@id/textView6"
         android:layout_toRightOf="@id/textView6"
         android:paddingTop="50dp"
-         />
+        android:layout_toEndOf="@id/textView6"
+        android:textColor="#ff0000" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Small Text"
+        android:text="@string/low"
         android:id="@+id/textView3"
         android:layout_alignTop="@+id/textView7"
         android:layout_toRightOf="@+id/textView7"
         android:layout_toEndOf="@+id/textView7"
-        android:paddingTop="50dp"/>
+        android:paddingTop="50dp"
+        android:textColor="#ff0000" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Small Text"
+        android:text="@string/low"
         android:id="@+id/textView4"
         android:layout_alignTop="@+id/textView8"
         android:layout_toRightOf="@+id/textView8"
         android:layout_toEndOf="@+id/textView8"
-        android:paddingTop="50dp"/>
+        android:paddingTop="50dp"
+        android:textColor="#ff0000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pair"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#13e604" />
 </RelativeLayout>

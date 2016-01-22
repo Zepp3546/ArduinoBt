@@ -4,13 +4,14 @@
     <string name="dsw9">DigitalOut-9</string>
     <string name="dsw10">DigitalOut-10</string>
     <string name="dsw11">DigitalOut-11</string>
-    <string name="textView5">Digital-2=</string>
-    <string name="textView6">Digital-3=</string>
-    <string name="textView7">Digital-4=</string>
-    <string name="textView8">Digital-5=</string>
-    <string name="daBtn">Goto Analog I/O</string>
+    <string name="textView5">Digital 2 IN=</string>
+    <string name="textView6">Digital 3 IN=</string>
+    <string name="textView7">Digital 4 IN=</string>
+    <string name="textView8">Digital 5 IN=</string>
+    <string name="daBtn">Analog I/O</string>
     <string name="title_activity_analog_display">AnalogDisplayActivity</string>
     <string name="tiger">tiger</string>
-    <string name="low">Low</string>
-    <string name="high">High</string>
+    <string name="low">LOW</string>
+    <string name="high">HIGH</string>
+    <string name="pair">Pair</string>
 </resources>

@@ -1,6 +1,11 @@
 package com.arduinobt;
 
+import android.bluetooth.BluetoothSocket;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Message;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,18 +17,21 @@ import android.widget.Switch;
 import android.widget.ToggleButton;
 
 
+;
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
     }
 
-    // is this what i need
 
-    //MenuItem item = menu.findItem(<id>);
-    //item.setVisible(<true/false>);
 
 
 
@@ -48,11 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void bignasty( View view) {
-        ImageView puspic = (ImageView) findViewById(R.id.imageView1);
-        puspic.setVisibility(View.VISIBLE);
 
-    }
+
+
 
 
 
