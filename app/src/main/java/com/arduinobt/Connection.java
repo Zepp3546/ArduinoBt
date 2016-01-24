@@ -1,10 +1,12 @@
 package com.arduinobt;
 
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothSocket;
 import android.os.Handler;
 import android.os.Message;
 import android.support.design.widget.Snackbar;
 import android.view.View;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,11 +17,27 @@ import java.io.OutputStream;
  */
 
 public class Connection extends Thread {
+    private BluetoothAdapter mBluetoothAdapter = null;
+
     public final BluetoothSocket mmSocket;
     private final InputStream mmInStream;
     public final OutputStream mmOutStream;
     public  final Handler mHandler = new Handler ();
     public  int MESSAGE_READ = 99;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -41,7 +59,11 @@ public class Connection extends Thread {
     }
 
     public void run() {
-        byte[] buffer = new byte[1024];  // buffer store for the stream
+
+
+
+
+    byte[] buffer = new byte[1024];  // buffer store for the stream
         int bytes; // bytes returned from read()
 
         // Keep listening to the InputStream until an exception occurs
@@ -71,6 +93,8 @@ public class Connection extends Thread {
             mmSocket.close();
         } catch (IOException e) { }
     }
+
+
 
 
 }

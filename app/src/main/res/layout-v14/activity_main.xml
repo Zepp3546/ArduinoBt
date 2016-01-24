@@ -187,5 +187,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textColor="#13e604" />
+        android:textColor="#13e604"
+        android:onClick="pair" />
 </RelativeLayout>
